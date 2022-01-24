@@ -1,0 +1,287 @@
+\documentclass[12pt,fleqn]{exam}
+\usepackage{amsmath,fleqn, url}
+\usepackage{pifont,enumerate,color}
+%\pagestyle{empty}
+%\usepackage[euler-digits,euler-hat-accent,T1]{eulervm}
+\usepackage{fourier}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\integers}{\mathbf{Z}}
+
+\newenvironment{alphalist}{
+  \begin{enumerate}[(a)]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+
+\usepackage{array}
+\newcolumntype{C}{>$c<$}
+
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+\begin{document}
+\large
+\begin{flushleft}
+{\bf 
+Foundations of Mathematics \\
+Homework Assignment 1 \\
+Due Saturday 29 January \the\year}
+\end{flushleft}
+
+\noindent \emph{This assignment has questions 1 through \numquestions \/ with a total
+of \numpoints\/ points.  The box to the left of each question gives the point value for the question. You may hand write this assignment, but you must turn it into Canvas electronically. }
+
+
+
+
+\begin{questions}
+
+\question [2] Give two original examples (differ from the examples given class or from the textbook) of sentences that are  assertions (also known as a statement).
+\begin{solution}
+  
+  \begin{enumerate}
+     \item 
+     \item 
+  \end{enumerate}
+\end{solution}
+\question [2]  Give two original examples (differ from the examples given class or from the textbook) of sentences that are not assertions.
+\begin{solution}
+    \begin{enumerate}
+     \item 
+     \item 
+  \end{enumerate}
+\end{solution}
+\question [2] Let \(P\) be a statement.  Show that \(\lnot (P \land \lnot P)\) is a tautology. Do this by constructing a truth table.
+\begin{solution} 
+
+
+\end{solution}
+
+\question [2] Let \(P\) and \(Q\) be a assertions.  Show that \( (P \implies Q) \equiv (P \implies Q) \)  is not a tautology. Do this by constructing a truth table.
+
+\question  [2] Let $A,B,$ and $C$ be assertions. Show that 
+\[ ( A \implies B)\land (B\implies C)) \implies (A \implies C) 
+\]
+ is a tautology.
+
+\end{questions}
+\end{document}
+
+\question [5] From page 15  (\S 1.3), work exercise \textbf{3}.
+
+\begin{solution} We have
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{P} & \textbf{Q} & \(\mathbf{P} \veebar \mathbf{Q} \) \\ \hline
+F & F & F\\
+F & T & T\\
+T & F & T \\
+T & T & F\\
+\hline
+\end{tabular}.
+
+\textbf{TE} I've seen \(\veebar\) used for an exclusive or in other
+texts, but I'm not sure that it's part of the ISO-31 standard
+(\url{http://en.wikipedia.org/wiki/ISO_31-11}). And by the way: Our
+textbook uses \(\sim \) for logical negation, but the standard is
+\(\lnot\).
+\end{solution}
+
+\question [5] From page 17  (\S 1.3), work exercise \textbf{11a}.
+
+\begin{solution} (11a) Since \(\mathbf{Q} \vee \sim \mathbf{Q} \) is a tautology, a truth table reduces to two rows:
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{P} & \(\mathbf{Q} \vee \sim \mathbf{Q} \) & \(P \Rightarrow  \mathbf{Q} \vee \sim \mathbf{Q} \) \\ \hline
+F & T & T \\
+T & T & T \\
+
+\hline
+\end{tabular}.
+
+\textbf{TE} We've shown that \(P \Rightarrow  \mathbf{Q} \vee \sim \mathbf{Q} \) is a tautology.
+
+\end{solution}
+
+\question [5] From page 17  (\S 1.3), work exercise \textbf{11d}.
+
+\begin{solution} (11d) 
+
+\begin{tabular}{|c|c|c|c|c|} \hline
+P & Q & P \(\Rightarrow \) Q  & \( \sim Q  \Rightarrow   \sim P \) & \( P \Rightarrow  Q \iff \sim Q  \Rightarrow   \sim P \) \\ \hline 
+F & F & T & T & T \\
+F & T & T & T & T \\
+T & F & F & F & T \\
+F & F & T & T & T \\
+\hline
+\end{tabular}.
+
+
+\end{solution}
+
+\question [5] A \emph{counterexample} is a \emph{specific example} that shows that a statement is false.
+Give a \emph{counterexample} for the following:
+
+\textbf{Proposition} If a function \(F\) is continuous at zero, then \(F\) is differentiable at zero.
+
+\begin{solution} 
+\textbf{Counterexample} The absolute value function is continuous but not differentiable at zero.
+\end{solution}
+
+\question [5] Show that the operator \(\Rightarrow \) is not associative. Thus, for statements \(P,Q,\) and \(R\), show that 
+\(P \Rightarrow  \left(Q \Rightarrow  R\right)\) is \emph{not} logically equivalent to \mbox{\(\left(P \Rightarrow  Q \right) \Rightarrow  R\).} 
+You could construct an eight row truth table, but you could also just provide one counterexample.
+Of course, to find the one counterexample you might need to check all
+eight cases (unless you get lucky or have some insight into the problem.)
+
+\begin{solution}
+ We have \(F \Rightarrow  (F \Rightarrow  F) = F \Rightarrow  T = T\), but  \((F \Rightarrow  F) \Rightarrow  F =
+  T \Rightarrow  F = F\). Thus   \(\Rightarrow \) is not associative.
+\end{solution}
+
+
+
+\end{questions}
+
+\end{document}
+
+\question Without using the word `not,' write a \emph{negation} of each statement.
+For the negation of `quick,' use the word `slow.' 
+
+\begin{parts}
+
+\part [5] All border collies are quick.
+
+\begin{solution} Some border collies are slow.
+
+\textbf{TE} A counterexample to the statement  ``All border collies are quick''  would be a \emph{specific} example of a
+border collie who is slow: For example ``Cousin Elizabeth's border collie Larry is slow'' would
+be a counterexample. More generally, there is a counterexample provided there is at least one border collie that is slow.
+That is, the negation of ``All border collies are quick'' is ``Some border collies are slow.''
+
+
+\end{solution}
+
+\part [5] Some border collies are quick.
+
+
+\begin{solution} All border collies are slow. \end{solution}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
+
+\question [10] Show that the operator \(\rightarrow\) is not
+associative. Thus, for statements \(P,Q,\) and \(R\), show that \(P
+\to \left(Q \to R\right)\) is \emph{not} logically equivalent to
+\mbox{\(\left(P \to Q \right) \to R\).} You could construct an eight
+row truth table, but you could also just provide one counterexample.
+Of course, to find the one counterexample you might need to check all
+eight cases (unless you get lucky or have some insight into the problem.)
+
+\begin{solution}
+ We have \(F \rightarrow (F \rightarrow F) = F \rightarrow T = T\), but  \((F \rightarrow F) \rightarrow F =
+  T \rightarrow F = F\). Thus   \(\rightarrow\) is not associative.
+\end{solution}
+
+
+
+\question Ternary logic\footnote{Ternary logic is sometimes known as \emph{Kleene logic}.
+Stephen Kleene (1909--1994) was an American mathematician. Maybe because he didn't want to 
+be known as ``Dr. Clean,'' he pronounced his name \emph{Klaynee.}} 
+introduces the additional truth value of \emph{unknown}. Denoting unknown by
+U, the truth table for negation, disjunction, conjunction, and logical equivalence are
+
+\begin{tabular}{|c|c|}
+\hline
+\(\mathbf{P}\) & \(\mathbf{\lnot P}\) \\ \hline
+T & F \\
+U & U \\
+F & T \\
+\hline
+\end{tabular}, \quad \quad
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\(\mathbf{P}\) & \(\mathbf{Q} \) & \(\mathbf{P \vee Q}\) &  \(\mathbf{P \wedge Q}\)  &  \(\mathbf{P \leftrightarrow Q}\) \\ \hline
+T & T & T & T & T\\
+T & U & T & U & F\\
+T & F & T  & F & F\\
+U & T & T  & U & F\\
+U & U & U & U & T \\
+U & F & U  & F & F \\
+F & T & T & F & F\\
+F & U & U & F & F\\
+F & F & F & F & T\\ \hline
+\end{tabular}.
+
+
+
+
+\begin{parts} 
+
+\part [5] Show that in ternary logic, the negation is an \emph{involution}. Thus show that
+\(P\) is logically equivalent to \(\lnot \lnot P\).
+
+\begin{solution} We have
+\begin{align*}
+  &\lnot \lnot F = \lnot T = T, \\
+  &\lnot \lnot U = \lnot U = U, \\
+ &\lnot \lnot T = \lnot F = T.
+\end{align*}
+So negation is an involution.
+\end{solution}
+
+\part [5] Assuming that \(P \rightarrow Q \) is logically equivalent
+to \(\left (\lnot P\right) \vee Q\), find the truth table for \(P
+\rightarrow Q\) in ternary logic.
+
+\begin{solution} A truth table for the Kleene conditional is
+
+\vspace{0.1in}
+\begin{tabular}{|c|c|c|c|c|} \hline
+\(P\) & \(Q\) & \(\lnot  P\) & \(\lnot P \lor Q\) & \(P \rightarrow Q\)\\  \hline
+T & T & F & T & T \\ T & U & F & U & U \\ T & F & F
+  & F & F \\ U & T & U & T & T \\ U & U & U & U & U \\ U & F & U & U
+  & U \\ F & T & T & T & T \\ F & U & T & T & T \\ F & F & T & T & T \\ \hline
+\end{tabular}.
+
+\end{solution}
+
+\part [5] Are the statements \( P \rightarrow Q\) and \(\lnot Q \rightarrow \lnot P\) logically
+equivalent?
+
+\begin{solution} Yes,  \( P \rightarrow Q\) and \(\lnot Q \rightarrow \lnot P\) are logically
+equivalent. We have
+\[
+    ( P \rightarrow Q) \leftrightarrow (\lnot P \vee Q) \leftrightarrow (\lnot \lnot Q \vee \lnot P) 
+\leftrightarrow (\lnot Q \rightarrow \lnot P).
+\]
+We've used the facts that negation is an involution and that the disjunction is commutative.
+
+\end{solution}
+\part [5] In ternary logic, is \(\lnot \left(P \vee Q \right) \) logically  equivalent to 
+\( \lnot \left(\lnot P \wedge \lnot Q \right)\)?
+
+\begin{solution} No, these statements are not logically equivalent; for example
+\( \lnot (T \vee T) = F\), but  \(\lnot (\lnot T \wedge \lnot T) = \lnot (F \wedge F) = \lnot F = T.\)
+
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+\end{document}
+
+
+
